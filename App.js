@@ -19,6 +19,6 @@ const parent = React.createElement(
 
 console.log(parent); //object
 
- const root = ReactDOM.createRoot(document.getElementById("root"));
+ const root = ReactDOM.createRoot(document.getElementById("root")); //Everything that renders renders inside this root
 
 root.render(parent);
