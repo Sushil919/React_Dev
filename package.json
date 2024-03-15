@@ -1,0 +1,22 @@
+{
+  "name": "react_dev",
+  "version": "1.0.0",
+  "description": "This is Namaste React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sushil919/React_Dev.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Sushil Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sushil919/React_Dev/issues"
+  },
+  "homepage": "https://github.com/Sushil919/React_Dev#readme"
+}
