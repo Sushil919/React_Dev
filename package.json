@@ -10,13 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Sushil919/React_Dev.git"
   },
-  "keywords": [
-    "react"
-  ],
+  "keywords": [],
   "author": "Sushil Kumar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Sushil919/React_Dev/issues"
   },
-  "homepage": "https://github.com/Sushil919/React_Dev#readme"
+  "homepage": "https://github.com/Sushil919/React_Dev#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
