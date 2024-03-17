@@ -10,15 +10,11 @@ const heading = (
 
 //React Functional Component
 
-const HeadingComponent = () => {
-    return <h1 className="heading">Namaste React Functional Component</h1>
-};
-
-const HeadingComponent2 = () => (
+const HeadingComponent = () => (
 <h1 className="heading">Namaste React Functional Component</h1>
-)
+);
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(<HeadingComponent />);
