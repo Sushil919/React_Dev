@@ -12,7 +12,7 @@ const heading = React.createElement(
 
 //JSX ==> React.createElement ==> ReactElement-JS Object ==> HTMLElement(render)
 
-const jsxHeading = <h1 id="heading">Namaste React using JSX🚀🚀</h1>
+const jsxHeading = <h1 className="head">Namaste React using JSX🚀🚀</h1>
 console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
