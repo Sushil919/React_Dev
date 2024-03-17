@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//React Element
-const heading = (
+//React Functional Component
+const Title = () => (
 <h1 className="head" tabIndex="5">
     Namaste React using JSX🚀🚀
     </h1>
@@ -11,7 +11,10 @@ const heading = (
 //React Functional Component
 
 const HeadingComponent = () => (
-<h1 className="heading">Namaste React Functional Component</h1>
+    <div id="container">
+    <Title />                                // Component composition
+    <h1 className="heading">Namaste React Functional Component</h1>
+    </div>
 );
 
 
