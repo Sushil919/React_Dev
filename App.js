@@ -12,7 +12,7 @@ const title = (
 
 const HeadingComponent = () => (
     <div id="container">
-        { <h2>{100 + 300}</h2> /* Inside these braces we can write any js exp  */}
+        {title}  
         <h1 className="heading">Namaste React Functional Component</h1>
     </div>
 );
