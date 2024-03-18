@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //React Functional Component
-const Title = () => (
-<h1 className="head" tabIndex="5">
+const title = (
+    <h1 className="head" tabIndex="5">
     Namaste React using JSX🚀🚀
     </h1>
     );
@@ -12,8 +12,8 @@ const Title = () => (
 
 const HeadingComponent = () => (
     <div id="container">
-    <Title />                                // Component composition
-    <h1 className="heading">Namaste React Functional Component</h1>
+        { <h2>{100 + 300}</h2> /* Inside these braces we can write any js exp  */}
+        <h1 className="heading">Namaste React Functional Component</h1>
     </div>
 );
 
