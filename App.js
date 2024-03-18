@@ -5,33 +5,70 @@ import ReactDOM from "react-dom/client";
  * Header
  * - Logo
  * - Nav Items
+ * 
  * Body
  * - Search Bar
- * - Restaurent Container
- *  - Restaurent Cards
+ * - Restaurant Container
+ *  - Restaurant Cards
+ *    - images
+ *    - Res_Name, star-rating, cuisine
+ * 
  * Footer
  * - copyright
  * - links
  * **/
 
-const Title = () =>(
-    <h1 className="head" tabIndex="5">
-    Namaste React using JSX🚀🚀
-    </h1>
+const Header = () => {
+    return(
+        <div className="header">
+            <div className="logo-container">
+                <img src="https://thumbs.dreamstime.com/z/print-food-logo-food-delivery-logo-vector-180672311.jpg" className="logo" />
+            </div>
+
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
     );
+}
 
-//React Functional Component
+const RestaurantCard = () => {
+    return (
+        <div className="res-card">
+            <h3>Meghna Foods</h3>
+        </div>
+    );
+};
 
-const HeadingComponent = () => (
-    <div id="container">
-        {Title()}
-        <Title />
-        <Title></Title> 
-        <h1 className="heading">Namaste React Functional Component</h1>
-    </div>
-);
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search">
+                Search
+            </div>
+            <div className="res-container">
+                <RestaurantCard />
+            </div>
+        </div>
+    );
+};
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+            <Body />
+        </div>
+    );
+};
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);

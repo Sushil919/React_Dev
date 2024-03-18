@@ -1,3 +1,21 @@
-.head {
-    color:aqua
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo{
+    width: 80px;
+    padding-left: 50px;
+}
+.nav-items{
+    padding: 0px 50px;
+    font-size: 20px;
+}
+.nav-items > ul{
+    display: flex;
+    list-style: none;
+}
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
 }
