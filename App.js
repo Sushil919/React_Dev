@@ -1,7 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//React Functional Component
+/** 
+ * Header
+ * - Logo
+ * - Nav Items
+ * Body
+ * - Search Bar
+ * - Restaurent Container
+ *  - Restaurent Cards
+ * Footer
+ * - copyright
+ * - links
+ * **/
+
 const Title = () =>(
     <h1 className="head" tabIndex="5">
     Namaste React using JSX🚀🚀
