@@ -50,6 +50,7 @@ const RestaurantCard = () => {
             <h4>25-30 mins</h4>
             <p>Chinese, Tibetan, Desserts Moti Jheel</p>
         </div>
+
     );
 };
 
@@ -60,6 +61,15 @@ const Body = () => {
                 Search
             </div>
             <div className="res-container">
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
+                <RestaurantCard />
                 <RestaurantCard />
             </div>
         </div>
