@@ -1,9 +1,9 @@
-
+import { LOGO_URL } from "../utils/constants"
 const Header = () => {
     return(
         <div className="header">
             <div className="logo-container">
-                <img src="https://thumbs.dreamstime.com/z/print-food-logo-food-delivery-logo-vector-180672311.jpg" className="logo" />
+                <img src={ LOGO_URL } className="logo" />
             </div>
 
             <div className="nav-items">
