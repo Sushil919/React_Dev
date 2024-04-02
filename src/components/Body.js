@@ -1,33 +1,9 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react";
+import resList from "../utils/mockData"
 
 const Body = () => {
-    const [listOfRestaurants, setListOfRestaurants] = useState([
-        {
-            "info": {
-            "id": "126289",
-            "name": "UBQ by Barbeque Nation",
-            "cloudinaryImageId": "laiyciem5yqr1qbxhfcj",
-            "costForTwo": "₹300 for two",
-            "cuisines": ["North Indian","Barbecue","Biryani","Kebabs","Mughlai","Desserts"],
-            "avgRatingString": "4.3",
-            "sla": {
-                "deliveryTime": 31,}
-                }
-        },
-        {
-            "info" : {
-            "id": "305577",
-            "name": "Pizza Hut",
-            "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
-            "costForTwo": "₹350 for two",
-            "cuisines": ["Pizzas"],
-            "avgRatingString": "3.9",
-            "sla": {
-                "deliveryTime": 31,}
-                }
-        }
-    ]);
+    const [listOfRestaurants, setListOfRestaurants] = useState(resList);
 
     return (
         <div className="body">
@@ -36,7 +12,7 @@ const Body = () => {
                 onClick={() => {
                     //Filter Logic
                     const filteredData = listOfRestaurants.filter(
-                        (res)=>res.info.avgRatingString>4
+                        (res)=>res.info.avgRatingString>4.3
                     );
                     setListOfRestaurants(filteredData);
                 }}
