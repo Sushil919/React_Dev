@@ -1,7 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
+import { useState } from "react";
 
 const Body = () => {
-    let listOfRestaurants = [
+    const [listOfRestaurants, setListOfRestaurants] = useState([
         {
             "info": {
             "id": "126289",
@@ -26,7 +27,7 @@ const Body = () => {
                 "deliveryTime": 31,}
                 }
         }
-    ];
+    ]);
 
     return (
         <div className="body">
@@ -34,10 +35,10 @@ const Body = () => {
                 <button className="filter-btn"
                 onClick={() => {
                     //Filter Logic
-                    listOfRestaurants = listOfRestaurants.filter(
-                        (x)=>x.info.avgRatingString>4
+                    const filteredData = listOfRestaurants.filter(
+                        (res)=>res.info.avgRatingString>4
                     );
-                    console.log(listOfRestaurants);
+                    setListOfRestaurants(filteredData);
                 }}
                 >
                     Top Rated Restaurants
