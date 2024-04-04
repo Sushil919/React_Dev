@@ -20,6 +20,7 @@ const Body = () => {
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     };
 
+    //Conditional rendering
     if (listOfRestaurants.length === 0)
         {
             return <Shimmer />;
