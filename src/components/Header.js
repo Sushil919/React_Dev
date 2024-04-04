@@ -1,7 +1,9 @@
 import { LOGO_URL } from "../utils/constants"
+import {useState} from "react";
+
 const Header = () => {
 
-    let btnName = "Login";
+    const [btnNameReact,setBtnNameReact] = useState("Login")
 
     return(
         <div className="header">
@@ -17,11 +19,10 @@ const Header = () => {
                     <li>Cart</li>
                     <button className="login" 
                     onClick={() => {
-                            btnName = "Logout";
-                            console.log(btnName);
+                            setBtnNameReact("Logout");
                         }
                     }>
-                        {btnName}
+                        {btnNameReact}
                     </button>
                 </ul>
             </div>
