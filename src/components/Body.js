@@ -37,6 +37,11 @@ const Body = () => {
                             //filter the restaurant cart and update thr UI
                             //searchText
                             console.log(searchText);
+
+                            const filteredRestaurant = listOfRestaurants.filter(
+                                (res) => res.info.name.includes(searchText)
+                            );
+                            setListOfRestaurants(filteredRestaurant);
                         }
                     }>
                         Search
