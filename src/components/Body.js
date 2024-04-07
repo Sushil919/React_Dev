@@ -30,7 +30,8 @@ const Body = () => {
                      value={searchText}
                      onChange={(e)=> {
                         setSearchText(e.target.value);
-                     }} 
+                     }
+                    } 
                     />
                     <button onClick={
                         () => {
