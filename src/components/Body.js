@@ -39,7 +39,7 @@ const Body = () => {
                             console.log(searchText);
 
                             const filteredRestaurant = listOfRestaurants.filter(
-                                (res) => res.info.name.includes(searchText)
+                                (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
                             );
                             setListOfRestaurants(filteredRestaurant);
                         }
