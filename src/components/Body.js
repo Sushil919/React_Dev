@@ -35,8 +35,6 @@ const Body = () => {
                     />
                     <button onClick={
                         () => {
-                            //filter the restaurant cart and update thr UI
-                            //searchText
                             console.log(searchText);
 
                             const filteredRestaurant = listOfRestaurants.filter(
