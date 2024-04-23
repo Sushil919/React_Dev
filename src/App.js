@@ -33,10 +33,10 @@ const appRouter = createBrowserRouter([
                 path: "/contact",
                 element: <Contact />
             },
-        ])
-        ]
+        ],
         errorElement: <Error />
     },
+])
     
 
 
