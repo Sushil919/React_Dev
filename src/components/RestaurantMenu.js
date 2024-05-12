@@ -22,14 +22,10 @@ const RestaurantMenu = () => {
     ) : (
         <div className="menu"> 
             <h1>{resInfo?.cards[2]?.card?.card?.info?.name}</h1>
-            <h2>Menu</h2>
+            <h2>{resInfo?.cards[2]?.card?.card?.info?.cuisines}</h2>
+            <h2>{resInfo?.cards[2]?.card?.card?.info?.costForTwoMessage}</h2>
+            
 
-            <li>
-                <ul>Cuisine</ul>
-                <ul>Quantitiy</ul>
-                <ul>Delivery time</ul>
-                <ul>Cost</ul>
-            </li>
         </div>
     );
 };
