@@ -17,13 +17,14 @@ const RestaurantMenu = () => {
         setResInfo(json.data);
     };
 
-    return resInfo === null ? (
-        <Shimmer />
-    ) : (
+    if(resInfo === null)
+        return <Shimmer />
+
+    const { name, cuisines, costForTwoMessage } = resInfo?.cards[2]?.card?.card?.info;
+    return (
         <div className="menu"> 
-            <h1>{resInfo?.cards[2]?.card?.card?.info?.name}</h1>
-            <h2>{resInfo?.cards[2]?.card?.card?.info?.cuisines}</h2>
-            <h2>{resInfo?.cards[2]?.card?.card?.info?.costForTwoMessage}</h2>
+            <h1>{name}</h1>
+            <p>{cuisines.join(", ")}-{costForTwoMessage}</p>
             
 
         </div>
